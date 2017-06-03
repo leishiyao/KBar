@@ -10,5 +10,12 @@
 
 @interface SongListTVC : UITableViewController
 
+typedef NS_ENUM(NSUInteger, SongListTVCMode) {
+    SongListFromCategory = 0,
+    SongListFromLocal
+};
+
 @property (strong, nonatomic) NSString *strSongCategory;
+@property (assign, nonatomic) SongListTVCMode mode;
+
 @end

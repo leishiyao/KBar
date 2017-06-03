@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6546C7C918127B7D620195C9 /* libPods-FangWenShanUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BFC883A2BF3486BFFB3EF6 /* libPods-FangWenShanUITests.a */; };
+		A2B2EA2D1EE2CC74006735C7 /* UILabel+APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B2EA2C1EE2CC74006735C7 /* UILabel+APIClient.m */; };
 		A2C58D501EE2599100B8A948 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D4F1EE2599100B8A948 /* main.m */; };
 		A2C58D531EE2599100B8A948 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D521EE2599100B8A948 /* AppDelegate.m */; };
 		A2C58D5C1EE2599100B8A948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C58D5A1EE2599100B8A948 /* Main.storyboard */; };
@@ -38,6 +39,10 @@
 		A2C58DCA1EE2923700B8A948 /* UIImageView+APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DC91EE2923700B8A948 /* UIImageView+APIClient.m */; };
 		A2C58DD01EE2969000B8A948 /* RecommendListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DCF1EE2969000B8A948 /* RecommendListTVC.m */; };
 		A2C58DD31EE296BC00B8A948 /* RecommendListTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DD21EE296BC00B8A948 /* RecommendListTCell.m */; };
+		A2C58DD61EE2A04000B8A948 /* JXTProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DD51EE2A04000B8A948 /* JXTProgressLabel.m */; };
+		A2C58DE91EE2A71900B8A948 /* backgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C58DE81EE2A71900B8A948 /* backgroundImage.png */; };
+		A2C58DEC1EE2A9FF00B8A948 /* S_EffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DEB1EE2A9FF00B8A948 /* S_EffectView.swift */; };
+		A2C58DF01EE2AAF600B8A948 /* RecorderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DEF1EE2AAF600B8A948 /* RecorderVC.m */; };
 		AC164763FD1F8B3BFC3AF599 /* libPods-FangWenShanTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 196BD7204D1309136D640FA9 /* libPods-FangWenShanTests.a */; };
 		C01DFE38C60F037BB2579742 /* libPods-FangWenShan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8680DC53A06967AD779726 /* libPods-FangWenShan.a */; };
 /* End PBXBuildFile section */
@@ -68,6 +73,8 @@
 		7AB219FA14704655A5E7497A /* Pods-FangWenShanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangWenShanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FangWenShanUITests/Pods-FangWenShanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		96BFC883A2BF3486BFFB3EF6 /* libPods-FangWenShanUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FangWenShanUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E71A219ED58867ECDDCE00 /* Pods-FangWenShanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangWenShanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FangWenShanTests/Pods-FangWenShanTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2B2EA2B1EE2CC74006735C7 /* UILabel+APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+APIClient.h"; sourceTree = "<group>"; };
+		A2B2EA2C1EE2CC74006735C7 /* UILabel+APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+APIClient.m"; sourceTree = "<group>"; };
 		A2C58D4B1EE2599100B8A948 /* FangWenShan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FangWenShan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C58D4F1EE2599100B8A948 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2C58D511EE2599100B8A948 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +133,13 @@
 		A2C58DCF1EE2969000B8A948 /* RecommendListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendListTVC.m; sourceTree = "<group>"; };
 		A2C58DD11EE296BC00B8A948 /* RecommendListTCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendListTCell.h; sourceTree = "<group>"; };
 		A2C58DD21EE296BC00B8A948 /* RecommendListTCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendListTCell.m; sourceTree = "<group>"; };
+		A2C58DD41EE2A04000B8A948 /* JXTProgressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTProgressLabel.h; sourceTree = "<group>"; };
+		A2C58DD51EE2A04000B8A948 /* JXTProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTProgressLabel.m; sourceTree = "<group>"; };
+		A2C58DE81EE2A71900B8A948 /* backgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundImage.png; sourceTree = "<group>"; };
+		A2C58DEA1EE2A9FE00B8A948 /* FangWenShan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FangWenShan-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2C58DEB1EE2A9FF00B8A948 /* S_EffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S_EffectView.swift; sourceTree = "<group>"; };
+		A2C58DEE1EE2AAF600B8A948 /* RecorderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderVC.h; sourceTree = "<group>"; };
+		A2C58DEF1EE2AAF600B8A948 /* RecorderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderVC.m; sourceTree = "<group>"; };
 		DC325592385541086D56B6BF /* Pods-FangWenShan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangWenShan.release.xcconfig"; path = "Pods/Target Support Files/Pods-FangWenShan/Pods-FangWenShan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +209,8 @@
 				A2C58DB51EE2781100B8A948 /* song_category.json */,
 				A2C58DB41EE2751B00B8A948 /* Song */,
 				A2C58DA81EE26BEC00B8A948 /* Global.h */,
+				A2C58DE81EE2A71900B8A948 /* backgroundImage.png */,
+				A2C58DEB1EE2A9FF00B8A948 /* S_EffectView.swift */,
 				A2C58DA71EE26BD300B8A948 /* Network */,
 				A2C58DAF1EE26CF300B8A948 /* CommonViews */,
 				A2C58D9E1EE269C600B8A948 /* Main */,
@@ -203,6 +219,7 @@
 				A2C58D891EE263D500B8A948 /* BasicFiles */,
 				A2C58D5D1EE2599100B8A948 /* Assets.xcassets */,
 				A2C58D5F1EE2599100B8A948 /* LaunchScreen.storyboard */,
+				A2C58DEA1EE2A9FE00B8A948 /* FangWenShan-Bridging-Header.h */,
 			);
 			path = FangWenShan;
 			sourceTree = "<group>";
@@ -245,6 +262,7 @@
 		A2C58D881EE263C200B8A948 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				A2C58DD71EE2A04500B8A948 /* ProgressLabel */,
 				A2C58D8E1EE2659C00B8A948 /* MBProgressHUD */,
 				A2C58D841EE263BE00B8A948 /* KRLCollection */,
 			);
@@ -263,6 +281,8 @@
 		A2C58D8D1EE2656C00B8A948 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				A2B2EA2B1EE2CC74006735C7 /* UILabel+APIClient.h */,
+				A2B2EA2C1EE2CC74006735C7 /* UILabel+APIClient.m */,
 				A2C58DC81EE2923700B8A948 /* UIImageView+APIClient.h */,
 				A2C58DC91EE2923700B8A948 /* UIImageView+APIClient.m */,
 				A2C58D9B1EE2690600B8A948 /* UIViewController+Shortcut.h */,
@@ -324,6 +344,7 @@
 		A2C58DB41EE2751B00B8A948 /* Song */ = {
 			isa = PBXGroup;
 			children = (
+				A2C58DED1EE2AAE100B8A948 /* Recoder */,
 				A2C58DCD1EE2966F00B8A948 /* RecommendList */,
 				A2C58DCC1EE2964800B8A948 /* List */,
 				A2C58DCB1EE2963900B8A948 /* Category */,
@@ -367,6 +388,24 @@
 				A2C58DD21EE296BC00B8A948 /* RecommendListTCell.m */,
 			);
 			name = RecommendList;
+			sourceTree = "<group>";
+		};
+		A2C58DD71EE2A04500B8A948 /* ProgressLabel */ = {
+			isa = PBXGroup;
+			children = (
+				A2C58DD41EE2A04000B8A948 /* JXTProgressLabel.h */,
+				A2C58DD51EE2A04000B8A948 /* JXTProgressLabel.m */,
+			);
+			name = ProgressLabel;
+			sourceTree = "<group>";
+		};
+		A2C58DED1EE2AAE100B8A948 /* Recoder */ = {
+			isa = PBXGroup;
+			children = (
+				A2C58DEE1EE2AAF600B8A948 /* RecorderVC.h */,
+				A2C58DEF1EE2AAF600B8A948 /* RecorderVC.m */,
+			);
+			name = Recoder;
 			sourceTree = "<group>";
 		};
 		B5C9A833A8DA3C81E85C6924 /* Pods */ = {
@@ -459,6 +498,7 @@
 					A2C58D4A1EE2599100B8A948 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = FM6LW48275;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					A2C58D661EE2599100B8A948 = {
@@ -503,6 +543,7 @@
 				A2C58DC71EE28CB000B8A948 /* Loading.xcassets in Resources */,
 				A2C58DB61EE2781100B8A948 /* song_category.json in Resources */,
 				A2C58D611EE2599100B8A948 /* LaunchScreen.storyboard in Resources */,
+				A2C58DE91EE2A71900B8A948 /* backgroundImage.png in Resources */,
 				A2C58DA01EE269F900B8A948 /* Song.storyboard in Resources */,
 				A2C58D5E1EE2599100B8A948 /* Assets.xcassets in Resources */,
 				A2C58D5C1EE2599100B8A948 /* Main.storyboard in Resources */,
@@ -674,6 +715,8 @@
 				A2C58D8C1EE2654100B8A948 /* MainVC.m in Sources */,
 				A2C58D981EE265DD00B8A948 /* MBProgressHUD+AFNetworking.m in Sources */,
 				A2C58DB31EE2751600B8A948 /* SongListTVC.m in Sources */,
+				A2C58DD61EE2A04000B8A948 /* JXTProgressLabel.m in Sources */,
+				A2C58DF01EE2AAF600B8A948 /* RecorderVC.m in Sources */,
 				A2C58DC21EE27ED700B8A948 /* Song.m in Sources */,
 				A2C58D911EE2659C00B8A948 /* MBProgressHUD.m in Sources */,
 				A2C58DD01EE2969000B8A948 /* RecommendListTVC.m in Sources */,
@@ -684,12 +727,14 @@
 				A2C58DB91EE2793700B8A948 /* SongCategoryCCell.m in Sources */,
 				A2C58DA31EE26B3C00B8A948 /* SongCategoryCVC.m in Sources */,
 				A2C58D871EE263BE00B8A948 /* KRLCollectionViewGridLayout.m in Sources */,
+				A2B2EA2D1EE2CC74006735C7 /* UILabel+APIClient.m in Sources */,
 				A2C58D9A1EE265DD00B8A948 /* UIImage+Original.m in Sources */,
 				A2C58DD31EE296BC00B8A948 /* RecommendListTCell.m in Sources */,
 				A2C58DAB1EE26C0D00B8A948 /* LSLoadingView.m in Sources */,
 				A2C58DC51EE28A3200B8A948 /* NSArray+Save.m in Sources */,
 				A2C58D501EE2599100B8A948 /* main.m in Sources */,
 				A2C58DBF1EE27ECC00B8A948 /* SongCategory.m in Sources */,
+				A2C58DEC1EE2A9FF00B8A948 /* S_EffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,12 +884,16 @@
 			baseConfigurationReference = 53E94B06B2A2A4BE65702205 /* Pods-FangWenShan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FM6LW48275;
 				INFOPLIST_FILE = FangWenShan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leis.FangWenShan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FangWenShan/FangWenShan-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -853,12 +902,15 @@
 			baseConfigurationReference = DC325592385541086D56B6BF /* Pods-FangWenShan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FM6LW48275;
 				INFOPLIST_FILE = FangWenShan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leis.FangWenShan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FangWenShan/FangWenShan-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -866,6 +918,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0EBA341B6E6956352580526F /* Pods-FangWenShanTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = FM6LW48275;
 				INFOPLIST_FILE = FangWenShanTests/Info.plist;
@@ -880,6 +933,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98E71A219ED58867ECDDCE00 /* Pods-FangWenShanTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = FM6LW48275;
 				INFOPLIST_FILE = FangWenShanTests/Info.plist;
@@ -894,6 +948,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AB219FA14704655A5E7497A /* Pods-FangWenShanUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = FM6LW48275;
 				INFOPLIST_FILE = FangWenShanUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -907,6 +962,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41B9FD7B6C21CE0396170542 /* Pods-FangWenShanUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = FM6LW48275;
 				INFOPLIST_FILE = FangWenShanUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

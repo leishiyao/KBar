@@ -10,6 +10,8 @@
 #import "SongListTCell.h"
 #import "APIClient.h"
 #import "Song.h"
+#import "RecorderVC.h"
+#import "UIViewController+Shortcut.h"
 
 @interface SongListTVC ()
 
@@ -19,7 +21,11 @@
 @implementation SongListTVC
 
 - (void) initAppearance {
-    self.navigationItem.title = _strSongCategory;
+    if ( _mode == SongListFromCategory ) {
+        self.navigationItem.title = _strSongCategory;
+    } else if ( _mode == SongListFromLocal ) {
+        self.navigationItem.title = @"本地歌单";
+    }
     self.tableView.tableFooterView = [[UIView alloc] init];
     
 }
@@ -70,6 +76,10 @@
 
 #pragma mark Table View Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    RecorderVC *vc = [UIViewController getVC:[RecorderVC class] inSB:@"Song"];
+//  TODO
+    
+    [self.navigationController pushViewController:vc animated:YES];
     
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
