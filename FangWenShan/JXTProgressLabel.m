@@ -12,6 +12,7 @@
 //  ***
 
 #import "JXTProgressLabel.h"
+#import "NSString+Size.h"
 
 @interface JXTProgressLabel ()
 
@@ -22,6 +23,9 @@
 
 
 @property (nonatomic, strong) NSTimer * timer2;
+@property (assign, nonatomic) CGFloat deltaWidth;
+@property (assign, nonatomic) CGFloat deltaTime;
+@property (assign, nonatomic) CGFloat endProgress;
 
 @property (strong, nonatomic) void (^didFinishBlock)();
 @end
@@ -134,16 +138,26 @@
 
 
 - (void)progressText:(NSString *)text within:(NSTimeInterval)seconds didFinish:(void (^)())didFinishBlock {
+    [self stopProgress];
+    
     self.text = text;
     _didFinishBlock = didFinishBlock;
     
-    [self stopProgress];
-    _timer2 = [NSTimer scheduledTimerWithTimeInterval:0.02 target:self selector:@selector(progress2) userInfo:nil repeats:YES];
+    CGSize textSize = [text calculateSizeWithFontSize:22 MaxSize:self.bounds.size];
+    CGFloat textWidth = textSize.width;
+    CGFloat totalWidth = self.frame.size.width;
+    self.dispProgress = ((totalWidth - textWidth) / 2) / totalWidth;
+    
+    _deltaTime = 0.02;
+    _deltaWidth = textWidth / seconds * _deltaTime / totalWidth;
+    _endProgress = ((totalWidth - textWidth) / 2 + textWidth) / totalWidth;
+    
+    _timer2 = [NSTimer scheduledTimerWithTimeInterval:_deltaTime target:self selector:@selector(progress2) userInfo:nil repeats:YES];
 }
 
 - (void)progress2 {
-    self.dispProgress += 0.01;
-    if (self.dispProgress >= 1) {
+    self.dispProgress += _deltaWidth;
+    if (self.dispProgress >= _endProgress) {
         [self stopProgress];
         self.dispProgress = 0;
         if (_didFinishBlock) {

@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6546C7C918127B7D620195C9 /* libPods-FangWenShanUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BFC883A2BF3486BFFB3EF6 /* libPods-FangWenShanUITests.a */; };
-		A2B2EA2D1EE2CC74006735C7 /* UILabel+APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B2EA2C1EE2CC74006735C7 /* UILabel+APIClient.m */; };
+		A2B2EA2D1EE2CC74006735C7 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B2EA2C1EE2CC74006735C7 /* NSString+Size.m */; };
+		A2B2EA2F1EE32A09006735C7 /* SongCat.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B2EA2E1EE32A09006735C7 /* SongCat.xcassets */; };
 		A2C58D501EE2599100B8A948 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D4F1EE2599100B8A948 /* main.m */; };
 		A2C58D531EE2599100B8A948 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D521EE2599100B8A948 /* AppDelegate.m */; };
 		A2C58D5C1EE2599100B8A948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C58D5A1EE2599100B8A948 /* Main.storyboard */; };
@@ -73,8 +74,9 @@
 		7AB219FA14704655A5E7497A /* Pods-FangWenShanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangWenShanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FangWenShanUITests/Pods-FangWenShanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		96BFC883A2BF3486BFFB3EF6 /* libPods-FangWenShanUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FangWenShanUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E71A219ED58867ECDDCE00 /* Pods-FangWenShanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangWenShanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FangWenShanTests/Pods-FangWenShanTests.release.xcconfig"; sourceTree = "<group>"; };
-		A2B2EA2B1EE2CC74006735C7 /* UILabel+APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+APIClient.h"; sourceTree = "<group>"; };
-		A2B2EA2C1EE2CC74006735C7 /* UILabel+APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+APIClient.m"; sourceTree = "<group>"; };
+		A2B2EA2B1EE2CC74006735C7 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		A2B2EA2C1EE2CC74006735C7 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		A2B2EA2E1EE32A09006735C7 /* SongCat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SongCat.xcassets; sourceTree = "<group>"; };
 		A2C58D4B1EE2599100B8A948 /* FangWenShan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FangWenShan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C58D4F1EE2599100B8A948 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2C58D511EE2599100B8A948 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				A2C58D8D1EE2656C00B8A948 /* Categories */,
 				A2C58D891EE263D500B8A948 /* BasicFiles */,
 				A2C58D5D1EE2599100B8A948 /* Assets.xcassets */,
+				A2B2EA2E1EE32A09006735C7 /* SongCat.xcassets */,
 				A2C58D5F1EE2599100B8A948 /* LaunchScreen.storyboard */,
 				A2C58DEA1EE2A9FE00B8A948 /* FangWenShan-Bridging-Header.h */,
 			);
@@ -281,8 +284,8 @@
 		A2C58D8D1EE2656C00B8A948 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				A2B2EA2B1EE2CC74006735C7 /* UILabel+APIClient.h */,
-				A2B2EA2C1EE2CC74006735C7 /* UILabel+APIClient.m */,
+				A2B2EA2B1EE2CC74006735C7 /* NSString+Size.h */,
+				A2B2EA2C1EE2CC74006735C7 /* NSString+Size.m */,
 				A2C58DC81EE2923700B8A948 /* UIImageView+APIClient.h */,
 				A2C58DC91EE2923700B8A948 /* UIImageView+APIClient.m */,
 				A2C58D9B1EE2690600B8A948 /* UIViewController+Shortcut.h */,
@@ -543,6 +546,7 @@
 				A2C58DC71EE28CB000B8A948 /* Loading.xcassets in Resources */,
 				A2C58DB61EE2781100B8A948 /* song_category.json in Resources */,
 				A2C58D611EE2599100B8A948 /* LaunchScreen.storyboard in Resources */,
+				A2B2EA2F1EE32A09006735C7 /* SongCat.xcassets in Resources */,
 				A2C58DE91EE2A71900B8A948 /* backgroundImage.png in Resources */,
 				A2C58DA01EE269F900B8A948 /* Song.storyboard in Resources */,
 				A2C58D5E1EE2599100B8A948 /* Assets.xcassets in Resources */,
@@ -727,7 +731,7 @@
 				A2C58DB91EE2793700B8A948 /* SongCategoryCCell.m in Sources */,
 				A2C58DA31EE26B3C00B8A948 /* SongCategoryCVC.m in Sources */,
 				A2C58D871EE263BE00B8A948 /* KRLCollectionViewGridLayout.m in Sources */,
-				A2B2EA2D1EE2CC74006735C7 /* UILabel+APIClient.m in Sources */,
+				A2B2EA2D1EE2CC74006735C7 /* NSString+Size.m in Sources */,
 				A2C58D9A1EE265DD00B8A948 /* UIImage+Original.m in Sources */,
 				A2C58DD31EE296BC00B8A948 /* RecommendListTCell.m in Sources */,
 				A2C58DAB1EE26C0D00B8A948 /* LSLoadingView.m in Sources */,

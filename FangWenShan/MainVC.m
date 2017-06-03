@@ -28,7 +28,8 @@
     UINavigationController *nvc0 = [[UINavigationController alloc] initWithRootViewController:vc0];
     [vcs addObject:nvc0];
     
-    UIViewController *vc1 = [UIViewController getVC:[SongListTVC class] inSB:@"Song"];
+    SongListTVC *vc1 = [UIViewController getVC:[SongListTVC class] inSB:@"Song"];
+    vc1.mode = SongListFromLocal;
     vc1.tabBarItem.image = [[UIImage imageNamed:@"second"] originalImage];
     vc1.tabBarItem.selectedImage = [[UIImage imageNamed:@"second"] originalImage];
     vc1.tabBarItem.title = @"已点歌曲";

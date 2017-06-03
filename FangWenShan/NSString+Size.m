@@ -6,11 +6,11 @@
 //
 //
 
-#import "UILabel+APIClient.h"
+#import "NSString+Size.h"
 
-@implementation UILabel(APIClient)
+@implementation NSString(Size)
 
-+ (CGSize) calculateRectWith:(NSString *)text FontSize:(CGFloat)fontSize MaxSize:(CGSize)maxSize {
+- (CGSize)calculateSizeWithFontSize:(CGFloat)fontSize MaxSize:(CGSize)maxSize {
     NSMutableParagraphStyle* paragraphStyle = [[NSMutableParagraphStyle alloc]init];
     paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
 
@@ -18,7 +18,7 @@
                                  NSFontAttributeName:[UIFont systemFontOfSize:fontSize],
                                  NSParagraphStyleAttributeName:paragraphStyle.copy};
 
-    CGSize labelSize = [text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading|NSStringDrawingTruncatesLastVisibleLine attributes:attributes context:nil].size;
+    CGSize labelSize = [self boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading|NSStringDrawingTruncatesLastVisibleLine attributes:attributes context:nil].size;
     
     labelSize.height = ceil(labelSize.height);
     labelSize.width = ceil(labelSize.width);

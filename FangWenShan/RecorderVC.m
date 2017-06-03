@@ -17,6 +17,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *vProgressLabelContainer;
 @property (nonatomic, strong) JXTProgressLabel * progressLabel2;
+@property (weak, nonatomic) IBOutlet UITextView *tvLyrics;
 
 @end
 
@@ -50,18 +51,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initLabels];
+//    [_tvLyrics scrollRangeToVisible:NSMakeRange(0, 5)];
+//    http://blog.csdn.net/colorapp/article/details/44223807
+    _tvLyrics.textContainerInset = UIEdgeInsetsZero;
+    _tvLyrics.textContainer.lineFragmentPadding = 0;
 }
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     [self initLabels];
     
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+//    [self initLabels];
     self.navigationController.navigationBar.hidden = YES;
     self.tabBarController.tabBar.hidden = YES;
 }
@@ -87,6 +91,8 @@
             ;
         }];
         
+        _tvLyrics.layoutManager.allowsNonContiguousLayout = NO;// .layoutManager.allowsNonContiguousLayout = false
+        [_tvLyrics scrollRangeToVisible:NSMakeRange(14, 2)];
     } else {
         if (_vEffect == nil) {
             return;

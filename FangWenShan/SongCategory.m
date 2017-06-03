@@ -25,11 +25,13 @@
     //解析json数据，使用系统方法 JSONObjectWithData:  options: error:
     NSArray *arr = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:nil];
     NSMutableArray *arrSource = [[NSMutableArray alloc] init];
+    int i;
     for (NSDictionary *dic in arr) {
         NSArray *arrSubCat = dic[ @"list" ];
+        i = 0;
         for (NSString *strSubCat in arrSubCat) {
             SongCategory *category = [[SongCategory alloc] init];
-            category.imgName = @"";
+            category.imgName = [NSString stringWithFormat:@"song_cat_%d", 47 + (i++ % 35)];
             category.name = strSubCat;
             category.numSongs = @100;
             [arrSource addObject:category];

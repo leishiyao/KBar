@@ -62,6 +62,7 @@
 #pragma mark UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     SongListTVC *vc = [UIViewController getVC:[SongListTVC class] inSB:@"Song"];
+    vc.mode = SongListFromCategory;
     vc.strSongCategory = _arrSource[ indexPath.row ].name;
     [self.navigationController pushViewController:vc animated:YES];
 }
