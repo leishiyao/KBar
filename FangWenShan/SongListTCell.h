@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  SongListTCell.h
 //  FangWenShan
 //
 //  Created by Leis on 2017/6/3.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface SongListTCell : UITableViewCell
 
 @end
-

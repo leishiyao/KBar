@@ -7,15 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6546C7C918127B7D620195C9 /* libPods-FangWenShanUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BFC883A2BF3486BFFB3EF6 /* libPods-FangWenShanUITests.a */; };
 		A2C58D501EE2599100B8A948 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D4F1EE2599100B8A948 /* main.m */; };
 		A2C58D531EE2599100B8A948 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D521EE2599100B8A948 /* AppDelegate.m */; };
-		A2C58D561EE2599100B8A948 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D551EE2599100B8A948 /* FirstViewController.m */; };
-		A2C58D591EE2599100B8A948 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D581EE2599100B8A948 /* SecondViewController.m */; };
 		A2C58D5C1EE2599100B8A948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C58D5A1EE2599100B8A948 /* Main.storyboard */; };
 		A2C58D5E1EE2599100B8A948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C58D5D1EE2599100B8A948 /* Assets.xcassets */; };
 		A2C58D611EE2599100B8A948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C58D5F1EE2599100B8A948 /* LaunchScreen.storyboard */; };
 		A2C58D6C1EE2599100B8A948 /* FangWenShanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D6B1EE2599100B8A948 /* FangWenShanTests.m */; };
 		A2C58D771EE2599100B8A948 /* FangWenShanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D761EE2599100B8A948 /* FangWenShanUITests.m */; };
+		A2C58D871EE263BE00B8A948 /* KRLCollectionViewGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D861EE263BE00B8A948 /* KRLCollectionViewGridLayout.m */; };
+		A2C58D8C1EE2654100B8A948 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D8B1EE2654100B8A948 /* MainVC.m */; };
+		A2C58D911EE2659C00B8A948 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D901EE2659C00B8A948 /* MBProgressHUD.m */; };
+		A2C58D981EE265DD00B8A948 /* MBProgressHUD+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D931EE265DD00B8A948 /* MBProgressHUD+AFNetworking.m */; };
+		A2C58D991EE265DD00B8A948 /* NSObject+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D951EE265DD00B8A948 /* NSObject+Description.m */; };
+		A2C58D9A1EE265DD00B8A948 /* UIImage+Original.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D971EE265DD00B8A948 /* UIImage+Original.m */; };
+		A2C58D9D1EE2690600B8A948 /* UIViewController+Shortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D9C1EE2690600B8A948 /* UIViewController+Shortcut.m */; };
+		A2C58DA01EE269F900B8A948 /* Song.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C58D9F1EE269F900B8A948 /* Song.storyboard */; };
+		A2C58DA31EE26B3C00B8A948 /* SongCategoryCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DA21EE26B3C00B8A948 /* SongCategoryCVC.m */; };
+		A2C58DA61EE26BCB00B8A948 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DA51EE26BCB00B8A948 /* APIClient.m */; };
+		A2C58DAB1EE26C0D00B8A948 /* LSLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DA91EE26C0D00B8A948 /* LSLoadingView.m */; };
+		A2C58DAE1EE26CEE00B8A948 /* StrAlertFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DAD1EE26CEE00B8A948 /* StrAlertFactory.m */; };
+		A2C58DB31EE2751600B8A948 /* SongListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DB21EE2751600B8A948 /* SongListTVC.m */; };
+		A2C58DB61EE2781100B8A948 /* song_category.json in Resources */ = {isa = PBXBuildFile; fileRef = A2C58DB51EE2781100B8A948 /* song_category.json */; };
+		A2C58DB91EE2793700B8A948 /* SongCategoryCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DB81EE2793700B8A948 /* SongCategoryCCell.m */; };
+		A2C58DBC1EE2794F00B8A948 /* SongListTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DBB1EE2794F00B8A948 /* SongListTCell.m */; };
+		A2C58DBF1EE27ECC00B8A948 /* SongCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DBE1EE27ECC00B8A948 /* SongCategory.m */; };
+		A2C58DC21EE27ED700B8A948 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DC11EE27ED700B8A948 /* Song.m */; };
+		A2C58DC51EE28A3200B8A948 /* NSArray+Save.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DC41EE28A3200B8A948 /* NSArray+Save.m */; };
+		AC164763FD1F8B3BFC3AF599 /* libPods-FangWenShanTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 196BD7204D1309136D640FA9 /* libPods-FangWenShanTests.a */; };
+		C01DFE38C60F037BB2579742 /* libPods-FangWenShan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8680DC53A06967AD779726 /* libPods-FangWenShan.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +56,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D8680DC53A06967AD779726 /* libPods-FangWenShan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FangWenShan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EBA341B6E6956352580526F /* Pods-FangWenShanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangWenShanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FangWenShanTests/Pods-FangWenShanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		196BD7204D1309136D640FA9 /* libPods-FangWenShanTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FangWenShanTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B9FD7B6C21CE0396170542 /* Pods-FangWenShanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangWenShanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FangWenShanUITests/Pods-FangWenShanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		53E94B06B2A2A4BE65702205 /* Pods-FangWenShan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangWenShan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FangWenShan/Pods-FangWenShan.debug.xcconfig"; sourceTree = "<group>"; };
+		7AB219FA14704655A5E7497A /* Pods-FangWenShanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangWenShanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FangWenShanUITests/Pods-FangWenShanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		96BFC883A2BF3486BFFB3EF6 /* libPods-FangWenShanUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FangWenShanUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98E71A219ED58867ECDDCE00 /* Pods-FangWenShanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangWenShanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FangWenShanTests/Pods-FangWenShanTests.release.xcconfig"; sourceTree = "<group>"; };
 		A2C58D4B1EE2599100B8A948 /* FangWenShan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FangWenShan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C58D4F1EE2599100B8A948 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2C58D511EE2599100B8A948 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2C58D521EE2599100B8A948 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A2C58D541EE2599100B8A948 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		A2C58D551EE2599100B8A948 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		A2C58D571EE2599100B8A948 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		A2C58D581EE2599100B8A948 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		A2C58D5B1EE2599100B8A948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2C58D5D1EE2599100B8A948 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2C58D601EE2599100B8A948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +78,44 @@
 		A2C58D721EE2599100B8A948 /* FangWenShanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FangWenShanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C58D761EE2599100B8A948 /* FangWenShanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FangWenShanUITests.m; sourceTree = "<group>"; };
 		A2C58D781EE2599100B8A948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C58D851EE263BE00B8A948 /* KRLCollectionViewGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRLCollectionViewGridLayout.h; sourceTree = "<group>"; };
+		A2C58D861EE263BE00B8A948 /* KRLCollectionViewGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRLCollectionViewGridLayout.m; sourceTree = "<group>"; };
+		A2C58D8A1EE2654100B8A948 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		A2C58D8B1EE2654100B8A948 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		A2C58D8F1EE2659C00B8A948 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		A2C58D901EE2659C00B8A948 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A2C58D921EE265DD00B8A948 /* MBProgressHUD+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+AFNetworking.h"; sourceTree = "<group>"; };
+		A2C58D931EE265DD00B8A948 /* MBProgressHUD+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+AFNetworking.m"; sourceTree = "<group>"; };
+		A2C58D941EE265DD00B8A948 /* NSObject+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Description.h"; sourceTree = "<group>"; };
+		A2C58D951EE265DD00B8A948 /* NSObject+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Description.m"; sourceTree = "<group>"; };
+		A2C58D961EE265DD00B8A948 /* UIImage+Original.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Original.h"; sourceTree = "<group>"; };
+		A2C58D971EE265DD00B8A948 /* UIImage+Original.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Original.m"; sourceTree = "<group>"; };
+		A2C58D9B1EE2690600B8A948 /* UIViewController+Shortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Shortcut.h"; sourceTree = "<group>"; };
+		A2C58D9C1EE2690600B8A948 /* UIViewController+Shortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Shortcut.m"; sourceTree = "<group>"; };
+		A2C58D9F1EE269F900B8A948 /* Song.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Song.storyboard; sourceTree = "<group>"; };
+		A2C58DA11EE26B3C00B8A948 /* SongCategoryCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongCategoryCVC.h; sourceTree = "<group>"; };
+		A2C58DA21EE26B3C00B8A948 /* SongCategoryCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongCategoryCVC.m; sourceTree = "<group>"; };
+		A2C58DA41EE26BCB00B8A948 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		A2C58DA51EE26BCB00B8A948 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		A2C58DA81EE26BEC00B8A948 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		A2C58DA91EE26C0D00B8A948 /* LSLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLoadingView.m; sourceTree = "<group>"; };
+		A2C58DAA1EE26C0D00B8A948 /* LSLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLoadingView.h; sourceTree = "<group>"; };
+		A2C58DAC1EE26CEE00B8A948 /* StrAlertFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrAlertFactory.h; sourceTree = "<group>"; };
+		A2C58DAD1EE26CEE00B8A948 /* StrAlertFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrAlertFactory.m; sourceTree = "<group>"; };
+		A2C58DB11EE2751600B8A948 /* SongListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListTVC.h; sourceTree = "<group>"; };
+		A2C58DB21EE2751600B8A948 /* SongListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListTVC.m; sourceTree = "<group>"; };
+		A2C58DB51EE2781100B8A948 /* song_category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = song_category.json; sourceTree = "<group>"; };
+		A2C58DB71EE2793700B8A948 /* SongCategoryCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongCategoryCCell.h; sourceTree = "<group>"; };
+		A2C58DB81EE2793700B8A948 /* SongCategoryCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongCategoryCCell.m; sourceTree = "<group>"; };
+		A2C58DBA1EE2794F00B8A948 /* SongListTCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListTCell.h; sourceTree = "<group>"; };
+		A2C58DBB1EE2794F00B8A948 /* SongListTCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListTCell.m; sourceTree = "<group>"; };
+		A2C58DBD1EE27ECC00B8A948 /* SongCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongCategory.h; sourceTree = "<group>"; };
+		A2C58DBE1EE27ECC00B8A948 /* SongCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongCategory.m; sourceTree = "<group>"; };
+		A2C58DC01EE27ED700B8A948 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		A2C58DC11EE27ED700B8A948 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		A2C58DC31EE28A3200B8A948 /* NSArray+Save.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Save.h"; sourceTree = "<group>"; };
+		A2C58DC41EE28A3200B8A948 /* NSArray+Save.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Save.m"; sourceTree = "<group>"; };
+		DC325592385541086D56B6BF /* Pods-FangWenShan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangWenShan.release.xcconfig"; path = "Pods/Target Support Files/Pods-FangWenShan/Pods-FangWenShan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01DFE38C60F037BB2579742 /* libPods-FangWenShan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC164763FD1F8B3BFC3AF599 /* libPods-FangWenShanTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +139,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6546C7C918127B7D620195C9 /* libPods-FangWenShanUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8114E8251A32CCAAE588FC2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D8680DC53A06967AD779726 /* libPods-FangWenShan.a */,
+				196BD7204D1309136D640FA9 /* libPods-FangWenShanTests.a */,
+				96BFC883A2BF3486BFFB3EF6 /* libPods-FangWenShanUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A2C58D421EE2599100B8A948 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +163,8 @@
 				A2C58D6A1EE2599100B8A948 /* FangWenShanTests */,
 				A2C58D751EE2599100B8A948 /* FangWenShanUITests */,
 				A2C58D4C1EE2599100B8A948 /* Products */,
+				B5C9A833A8DA3C81E85C6924 /* Pods */,
+				8114E8251A32CCAAE588FC2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,17 +181,17 @@
 		A2C58D4D1EE2599100B8A948 /* FangWenShan */ = {
 			isa = PBXGroup;
 			children = (
-				A2C58D511EE2599100B8A948 /* AppDelegate.h */,
-				A2C58D521EE2599100B8A948 /* AppDelegate.m */,
-				A2C58D541EE2599100B8A948 /* FirstViewController.h */,
-				A2C58D551EE2599100B8A948 /* FirstViewController.m */,
-				A2C58D571EE2599100B8A948 /* SecondViewController.h */,
-				A2C58D581EE2599100B8A948 /* SecondViewController.m */,
-				A2C58D5A1EE2599100B8A948 /* Main.storyboard */,
+				A2C58DB51EE2781100B8A948 /* song_category.json */,
+				A2C58DB41EE2751B00B8A948 /* Song */,
+				A2C58DA81EE26BEC00B8A948 /* Global.h */,
+				A2C58DA71EE26BD300B8A948 /* Network */,
+				A2C58DAF1EE26CF300B8A948 /* CommonViews */,
+				A2C58D9E1EE269C600B8A948 /* Main */,
+				A2C58D881EE263C200B8A948 /* ThirdParty */,
+				A2C58D8D1EE2656C00B8A948 /* Categories */,
+				A2C58D891EE263D500B8A948 /* BasicFiles */,
 				A2C58D5D1EE2599100B8A948 /* Assets.xcassets */,
 				A2C58D5F1EE2599100B8A948 /* LaunchScreen.storyboard */,
-				A2C58D621EE2599100B8A948 /* Info.plist */,
-				A2C58D4E1EE2599100B8A948 /* Supporting Files */,
 			);
 			path = FangWenShan;
 			sourceTree = "<group>";
@@ -145,6 +222,124 @@
 			path = FangWenShanUITests;
 			sourceTree = "<group>";
 		};
+		A2C58D841EE263BE00B8A948 /* KRLCollection */ = {
+			isa = PBXGroup;
+			children = (
+				A2C58D851EE263BE00B8A948 /* KRLCollectionViewGridLayout.h */,
+				A2C58D861EE263BE00B8A948 /* KRLCollectionViewGridLayout.m */,
+			);
+			path = KRLCollection;
+			sourceTree = "<group>";
+		};
+		A2C58D881EE263C200B8A948 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				A2C58D8E1EE2659C00B8A948 /* MBProgressHUD */,
+				A2C58D841EE263BE00B8A948 /* KRLCollection */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		A2C58D891EE263D500B8A948 /* BasicFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A2C58D621EE2599100B8A948 /* Info.plist */,
+				A2C58D4E1EE2599100B8A948 /* Supporting Files */,
+			);
+			name = BasicFiles;
+			sourceTree = "<group>";
+		};
+		A2C58D8D1EE2656C00B8A948 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A2C58D9B1EE2690600B8A948 /* UIViewController+Shortcut.h */,
+				A2C58D9C1EE2690600B8A948 /* UIViewController+Shortcut.m */,
+				A2C58D921EE265DD00B8A948 /* MBProgressHUD+AFNetworking.h */,
+				A2C58D931EE265DD00B8A948 /* MBProgressHUD+AFNetworking.m */,
+				A2C58D941EE265DD00B8A948 /* NSObject+Description.h */,
+				A2C58D951EE265DD00B8A948 /* NSObject+Description.m */,
+				A2C58D961EE265DD00B8A948 /* UIImage+Original.h */,
+				A2C58D971EE265DD00B8A948 /* UIImage+Original.m */,
+				A2C58DC31EE28A3200B8A948 /* NSArray+Save.h */,
+				A2C58DC41EE28A3200B8A948 /* NSArray+Save.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		A2C58D8E1EE2659C00B8A948 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A2C58D8F1EE2659C00B8A948 /* MBProgressHUD.h */,
+				A2C58D901EE2659C00B8A948 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		A2C58D9E1EE269C600B8A948 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A2C58D511EE2599100B8A948 /* AppDelegate.h */,
+				A2C58D521EE2599100B8A948 /* AppDelegate.m */,
+				A2C58D5A1EE2599100B8A948 /* Main.storyboard */,
+				A2C58D8A1EE2654100B8A948 /* MainVC.h */,
+				A2C58D8B1EE2654100B8A948 /* MainVC.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		A2C58DA71EE26BD300B8A948 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A2C58DA41EE26BCB00B8A948 /* APIClient.h */,
+				A2C58DA51EE26BCB00B8A948 /* APIClient.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		A2C58DAF1EE26CF300B8A948 /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				A2C58DA91EE26C0D00B8A948 /* LSLoadingView.m */,
+				A2C58DAA1EE26C0D00B8A948 /* LSLoadingView.h */,
+				A2C58DAC1EE26CEE00B8A948 /* StrAlertFactory.h */,
+				A2C58DAD1EE26CEE00B8A948 /* StrAlertFactory.m */,
+			);
+			name = CommonViews;
+			sourceTree = "<group>";
+		};
+		A2C58DB41EE2751B00B8A948 /* Song */ = {
+			isa = PBXGroup;
+			children = (
+				A2C58D9F1EE269F900B8A948 /* Song.storyboard */,
+				A2C58DA11EE26B3C00B8A948 /* SongCategoryCVC.h */,
+				A2C58DA21EE26B3C00B8A948 /* SongCategoryCVC.m */,
+				A2C58DB71EE2793700B8A948 /* SongCategoryCCell.h */,
+				A2C58DB81EE2793700B8A948 /* SongCategoryCCell.m */,
+				A2C58DB11EE2751600B8A948 /* SongListTVC.h */,
+				A2C58DB21EE2751600B8A948 /* SongListTVC.m */,
+				A2C58DBA1EE2794F00B8A948 /* SongListTCell.h */,
+				A2C58DBB1EE2794F00B8A948 /* SongListTCell.m */,
+				A2C58DBD1EE27ECC00B8A948 /* SongCategory.h */,
+				A2C58DBE1EE27ECC00B8A948 /* SongCategory.m */,
+				A2C58DC01EE27ED700B8A948 /* Song.h */,
+				A2C58DC11EE27ED700B8A948 /* Song.m */,
+			);
+			name = Song;
+			sourceTree = "<group>";
+		};
+		B5C9A833A8DA3C81E85C6924 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53E94B06B2A2A4BE65702205 /* Pods-FangWenShan.debug.xcconfig */,
+				DC325592385541086D56B6BF /* Pods-FangWenShan.release.xcconfig */,
+				0EBA341B6E6956352580526F /* Pods-FangWenShanTests.debug.xcconfig */,
+				98E71A219ED58867ECDDCE00 /* Pods-FangWenShanTests.release.xcconfig */,
+				7AB219FA14704655A5E7497A /* Pods-FangWenShanUITests.debug.xcconfig */,
+				41B9FD7B6C21CE0396170542 /* Pods-FangWenShanUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +347,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2C58D7B1EE2599100B8A948 /* Build configuration list for PBXNativeTarget "FangWenShan" */;
 			buildPhases = (
+				88C72B0C6753C740E0A5122E /* [CP] Check Pods Manifest.lock */,
 				A2C58D471EE2599100B8A948 /* Sources */,
 				A2C58D481EE2599100B8A948 /* Frameworks */,
 				A2C58D491EE2599100B8A948 /* Resources */,
+				3AB92145BBC39CB2AB58CB09 /* [CP] Embed Pods Frameworks */,
+				41E3678ECF0FB653C5005C84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,9 +367,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2C58D7E1EE2599100B8A948 /* Build configuration list for PBXNativeTarget "FangWenShanTests" */;
 			buildPhases = (
+				C855EC824C5CC6CAC23AF07C /* [CP] Check Pods Manifest.lock */,
 				A2C58D631EE2599100B8A948 /* Sources */,
 				A2C58D641EE2599100B8A948 /* Frameworks */,
 				A2C58D651EE2599100B8A948 /* Resources */,
+				8DDAD6C833DC47701B9EDF4F /* [CP] Embed Pods Frameworks */,
+				AA6014B30A8C46B96DC576FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,9 +388,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2C58D811EE2599100B8A948 /* Build configuration list for PBXNativeTarget "FangWenShanUITests" */;
 			buildPhases = (
+				BDB90782D9A1F939DD5F7514 /* [CP] Check Pods Manifest.lock */,
 				A2C58D6E1EE2599100B8A948 /* Sources */,
 				A2C58D6F1EE2599100B8A948 /* Frameworks */,
 				A2C58D701EE2599100B8A948 /* Resources */,
+				786B2E9A15BC59ECD66AD67F /* [CP] Embed Pods Frameworks */,
+				2168FFE7EB38A558F512B7CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,7 +458,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C58DB61EE2781100B8A948 /* song_category.json in Resources */,
 				A2C58D611EE2599100B8A948 /* LaunchScreen.storyboard in Resources */,
+				A2C58DA01EE269F900B8A948 /* Song.storyboard in Resources */,
 				A2C58D5E1EE2599100B8A948 /* Assets.xcassets in Resources */,
 				A2C58D5C1EE2599100B8A948 /* Main.storyboard in Resources */,
 			);
@@ -276,15 +482,168 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2168FFE7EB38A558F512B7CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FangWenShanUITests/Pods-FangWenShanUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AB92145BBC39CB2AB58CB09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FangWenShan/Pods-FangWenShan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41E3678ECF0FB653C5005C84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FangWenShan/Pods-FangWenShan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		786B2E9A15BC59ECD66AD67F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FangWenShanUITests/Pods-FangWenShanUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88C72B0C6753C740E0A5122E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8DDAD6C833DC47701B9EDF4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FangWenShanTests/Pods-FangWenShanTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA6014B30A8C46B96DC576FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FangWenShanTests/Pods-FangWenShanTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDB90782D9A1F939DD5F7514 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C855EC824C5CC6CAC23AF07C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A2C58D471EE2599100B8A948 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2C58D591EE2599100B8A948 /* SecondViewController.m in Sources */,
 				A2C58D531EE2599100B8A948 /* AppDelegate.m in Sources */,
-				A2C58D561EE2599100B8A948 /* FirstViewController.m in Sources */,
+				A2C58DBC1EE2794F00B8A948 /* SongListTCell.m in Sources */,
+				A2C58D991EE265DD00B8A948 /* NSObject+Description.m in Sources */,
+				A2C58D8C1EE2654100B8A948 /* MainVC.m in Sources */,
+				A2C58D981EE265DD00B8A948 /* MBProgressHUD+AFNetworking.m in Sources */,
+				A2C58DB31EE2751600B8A948 /* SongListTVC.m in Sources */,
+				A2C58DC21EE27ED700B8A948 /* Song.m in Sources */,
+				A2C58D911EE2659C00B8A948 /* MBProgressHUD.m in Sources */,
+				A2C58DA61EE26BCB00B8A948 /* APIClient.m in Sources */,
+				A2C58DAE1EE26CEE00B8A948 /* StrAlertFactory.m in Sources */,
+				A2C58D9D1EE2690600B8A948 /* UIViewController+Shortcut.m in Sources */,
+				A2C58DB91EE2793700B8A948 /* SongCategoryCCell.m in Sources */,
+				A2C58DA31EE26B3C00B8A948 /* SongCategoryCVC.m in Sources */,
+				A2C58D871EE263BE00B8A948 /* KRLCollectionViewGridLayout.m in Sources */,
+				A2C58D9A1EE265DD00B8A948 /* UIImage+Original.m in Sources */,
+				A2C58DAB1EE26C0D00B8A948 /* LSLoadingView.m in Sources */,
+				A2C58DC51EE28A3200B8A948 /* NSArray+Save.m in Sources */,
 				A2C58D501EE2599100B8A948 /* main.m in Sources */,
+				A2C58DBF1EE27ECC00B8A948 /* SongCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,10 +790,12 @@
 		};
 		A2C58D7C1EE2599100B8A948 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E94B06B2A2A4BE65702205 /* Pods-FangWenShan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FM6LW48275;
 				INFOPLIST_FILE = FangWenShan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leis.FangWenShan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,10 +804,12 @@
 		};
 		A2C58D7D1EE2599100B8A948 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC325592385541086D56B6BF /* Pods-FangWenShan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FM6LW48275;
 				INFOPLIST_FILE = FangWenShan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leis.FangWenShan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,6 +818,7 @@
 		};
 		A2C58D7F1EE2599100B8A948 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EBA341B6E6956352580526F /* Pods-FangWenShanTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = FM6LW48275;
@@ -468,6 +832,7 @@
 		};
 		A2C58D801EE2599100B8A948 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E71A219ED58867ECDDCE00 /* Pods-FangWenShanTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = FM6LW48275;
@@ -481,6 +846,7 @@
 		};
 		A2C58D821EE2599100B8A948 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AB219FA14704655A5E7497A /* Pods-FangWenShanUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = FM6LW48275;
 				INFOPLIST_FILE = FangWenShanUITests/Info.plist;
@@ -493,6 +859,7 @@
 		};
 		A2C58D831EE2599100B8A948 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B9FD7B6C21CE0396170542 /* Pods-FangWenShanUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = FM6LW48275;
 				INFOPLIST_FILE = FangWenShanUITests/Info.plist;
@@ -522,6 +889,7 @@
 				A2C58D7D1EE2599100B8A948 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2C58D7E1EE2599100B8A948 /* Build configuration list for PBXNativeTarget "FangWenShanTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +898,7 @@
 				A2C58D801EE2599100B8A948 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2C58D811EE2599100B8A948 /* Build configuration list for PBXNativeTarget "FangWenShanUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +907,7 @@
 				A2C58D831EE2599100B8A948 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

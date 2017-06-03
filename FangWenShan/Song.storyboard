@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1wY-rx-8Ud">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--科院方文山-->
+        <scene sceneID="CIv-Pm-TT9">
+            <objects>
+                <collectionViewController storyboardIdentifier="SongCategoryCVC" id="1wY-rx-8Ud" customClass="SongCategoryCVC" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="VnO-Ng-YrY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewLayout key="collectionViewLayout" id="qhY-xo-qQU" customClass="KRLCollectionViewGridLayout"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SongCategoryCCell" id="4fN-Ce-N1C" customClass="SongCategoryCCell">
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Si2-Gc-ppk">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fnC-aa-kWq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旗舰店" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I70-K9-EwO">
+                                                    <rect key="frame" x="8" y="179" width="40" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热歌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUX-6P-nwz">
+                                                    <rect key="frame" x="8" y="155" width="33" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="fnC-aa-kWq" firstAttribute="top" secondItem="Si2-Gc-ppk" secondAttribute="top" id="3uX-I1-r2G"/>
+                                                <constraint firstItem="fnC-aa-kWq" firstAttribute="leading" secondItem="Si2-Gc-ppk" secondAttribute="leading" id="I7x-gY-Ze9"/>
+                                                <constraint firstAttribute="bottom" secondItem="I70-K9-EwO" secondAttribute="bottom" constant="5" id="RDm-Qa-N71"/>
+                                                <constraint firstItem="zUX-6P-nwz" firstAttribute="leading" secondItem="Si2-Gc-ppk" secondAttribute="leading" constant="8" id="bU1-io-i6t"/>
+                                                <constraint firstItem="zUX-6P-nwz" firstAttribute="top" secondItem="fnC-aa-kWq" secondAttribute="bottom" constant="5" id="hmF-tl-BUm"/>
+                                                <constraint firstAttribute="trailing" secondItem="fnC-aa-kWq" secondAttribute="trailing" id="sLa-RF-S94"/>
+                                                <constraint firstAttribute="bottom" secondItem="fnC-aa-kWq" secondAttribute="bottom" constant="50" id="uFS-dG-jm1"/>
+                                                <constraint firstItem="I70-K9-EwO" firstAttribute="leading" secondItem="zUX-6P-nwz" secondAttribute="leading" id="zQq-Sv-Bf5"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="Si2-Gc-ppk" firstAttribute="leading" secondItem="4fN-Ce-N1C" secondAttribute="leading" id="2qe-0s-ztU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Si2-Gc-ppk" secondAttribute="trailing" id="a4d-Yj-w1a"/>
+                                    <constraint firstAttribute="bottom" secondItem="Si2-Gc-ppk" secondAttribute="bottom" id="hHi-31-7MP"/>
+                                    <constraint firstItem="Si2-Gc-ppk" firstAttribute="top" secondItem="4fN-Ce-N1C" secondAttribute="top" id="mfF-Di-sTQ"/>
+                                </constraints>
+                                <size key="customSize" width="200" height="200"/>
+                                <connections>
+                                    <outlet property="imgView" destination="fnC-aa-kWq" id="ET5-r7-6M7"/>
+                                    <outlet property="lName" destination="zUX-6P-nwz" id="cct-yy-OZ4"/>
+                                    <outlet property="lNum" destination="I70-K9-EwO" id="q5o-Jm-Vtr"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="科院方文山" id="Aa0-yb-7aS"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvC-t5-elc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013.6" y="1018.7406296851575"/>
+        </scene>
+        <!--歌曲列表-->
+        <scene sceneID="nSo-07-huw">
+            <objects>
+                <tableViewController storyboardIdentifier="SongListTVC" id="GYX-Oz-C5H" customClass="SongListTVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5nJ-NU-Xe0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongListTCell" id="TUf-Mz-ymL" customClass="SongListTCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TUf-Mz-ymL" id="Coy-Sl-pn4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GYX-Oz-C5H" id="OwV-wm-Rsg"/>
+                            <outlet property="delegate" destination="GYX-Oz-C5H" id="8qb-20-AyQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="歌曲列表" id="gty-12-nux"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="leQ-Mf-UTT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896" y="1163"/>
+        </scene>
+    </scenes>
+</document>

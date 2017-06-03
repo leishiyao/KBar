@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  SongListTVC.h
 //  FangWenShan
 //
 //  Created by Leis on 2017/6/3.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SongListTVC : UITableViewController
 
-
+@property (strong, nonatomic) NSString *strSongCategory;
 @end
-
