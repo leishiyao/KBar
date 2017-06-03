@@ -7,18 +7,21 @@
 //
 
 #import "SongListTCell.h"
+#import "Song.h"
+#import "UIImageView+APIClient.h"
 
 @implementation SongListTCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)setSong:(Song *)song {
+    _song = song;
+//    [_imgView setImageWithUrlStr:song.albumUrl placeHolder:nil];
+    _lName.text = _song.name;
+    _lAuthor.text = _song.author;
+    
 }
-
 @end

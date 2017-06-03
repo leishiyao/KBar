@@ -20,7 +20,11 @@
 
 - (void)setSource:(SongCategory *)source {
     _source = source;
-    _imgView.image = [UIImage imageNamed:_source.imgName];
+    
+    if (_source.imgName.length > 0) {
+        _imgView.image = [UIImage imageNamed:_source.imgName];
+    }
+    
     _lName.text = _source.name;
     _lNum.text = _source.strNumSongs;
 }

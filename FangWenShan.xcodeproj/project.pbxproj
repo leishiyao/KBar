@@ -34,6 +34,10 @@
 		A2C58DBF1EE27ECC00B8A948 /* SongCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DBE1EE27ECC00B8A948 /* SongCategory.m */; };
 		A2C58DC21EE27ED700B8A948 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DC11EE27ED700B8A948 /* Song.m */; };
 		A2C58DC51EE28A3200B8A948 /* NSArray+Save.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DC41EE28A3200B8A948 /* NSArray+Save.m */; };
+		A2C58DC71EE28CB000B8A948 /* Loading.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C58DC61EE28CB000B8A948 /* Loading.xcassets */; };
+		A2C58DCA1EE2923700B8A948 /* UIImageView+APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DC91EE2923700B8A948 /* UIImageView+APIClient.m */; };
+		A2C58DD01EE2969000B8A948 /* RecommendListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DCF1EE2969000B8A948 /* RecommendListTVC.m */; };
+		A2C58DD31EE296BC00B8A948 /* RecommendListTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58DD21EE296BC00B8A948 /* RecommendListTCell.m */; };
 		AC164763FD1F8B3BFC3AF599 /* libPods-FangWenShanTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 196BD7204D1309136D640FA9 /* libPods-FangWenShanTests.a */; };
 		C01DFE38C60F037BB2579742 /* libPods-FangWenShan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8680DC53A06967AD779726 /* libPods-FangWenShan.a */; };
 /* End PBXBuildFile section */
@@ -115,6 +119,13 @@
 		A2C58DC11EE27ED700B8A948 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
 		A2C58DC31EE28A3200B8A948 /* NSArray+Save.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Save.h"; sourceTree = "<group>"; };
 		A2C58DC41EE28A3200B8A948 /* NSArray+Save.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Save.m"; sourceTree = "<group>"; };
+		A2C58DC61EE28CB000B8A948 /* Loading.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Loading.xcassets; sourceTree = "<group>"; };
+		A2C58DC81EE2923700B8A948 /* UIImageView+APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+APIClient.h"; sourceTree = "<group>"; };
+		A2C58DC91EE2923700B8A948 /* UIImageView+APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+APIClient.m"; sourceTree = "<group>"; };
+		A2C58DCE1EE2969000B8A948 /* RecommendListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendListTVC.h; sourceTree = "<group>"; };
+		A2C58DCF1EE2969000B8A948 /* RecommendListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendListTVC.m; sourceTree = "<group>"; };
+		A2C58DD11EE296BC00B8A948 /* RecommendListTCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendListTCell.h; sourceTree = "<group>"; };
+		A2C58DD21EE296BC00B8A948 /* RecommendListTCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendListTCell.m; sourceTree = "<group>"; };
 		DC325592385541086D56B6BF /* Pods-FangWenShan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FangWenShan.release.xcconfig"; path = "Pods/Target Support Files/Pods-FangWenShan/Pods-FangWenShan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -252,6 +263,8 @@
 		A2C58D8D1EE2656C00B8A948 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				A2C58DC81EE2923700B8A948 /* UIImageView+APIClient.h */,
+				A2C58DC91EE2923700B8A948 /* UIImageView+APIClient.m */,
 				A2C58D9B1EE2690600B8A948 /* UIViewController+Shortcut.h */,
 				A2C58D9C1EE2690600B8A948 /* UIViewController+Shortcut.m */,
 				A2C58D921EE265DD00B8A948 /* MBProgressHUD+AFNetworking.h */,
@@ -299,6 +312,7 @@
 		A2C58DAF1EE26CF300B8A948 /* CommonViews */ = {
 			isa = PBXGroup;
 			children = (
+				A2C58DC61EE28CB000B8A948 /* Loading.xcassets */,
 				A2C58DA91EE26C0D00B8A948 /* LSLoadingView.m */,
 				A2C58DAA1EE26C0D00B8A948 /* LSLoadingView.h */,
 				A2C58DAC1EE26CEE00B8A948 /* StrAlertFactory.h */,
@@ -310,21 +324,49 @@
 		A2C58DB41EE2751B00B8A948 /* Song */ = {
 			isa = PBXGroup;
 			children = (
+				A2C58DCD1EE2966F00B8A948 /* RecommendList */,
+				A2C58DCC1EE2964800B8A948 /* List */,
+				A2C58DCB1EE2963900B8A948 /* Category */,
 				A2C58D9F1EE269F900B8A948 /* Song.storyboard */,
+			);
+			name = Song;
+			sourceTree = "<group>";
+		};
+		A2C58DCB1EE2963900B8A948 /* Category */ = {
+			isa = PBXGroup;
+			children = (
 				A2C58DA11EE26B3C00B8A948 /* SongCategoryCVC.h */,
 				A2C58DA21EE26B3C00B8A948 /* SongCategoryCVC.m */,
 				A2C58DB71EE2793700B8A948 /* SongCategoryCCell.h */,
 				A2C58DB81EE2793700B8A948 /* SongCategoryCCell.m */,
+				A2C58DBD1EE27ECC00B8A948 /* SongCategory.h */,
+				A2C58DBE1EE27ECC00B8A948 /* SongCategory.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		A2C58DCC1EE2964800B8A948 /* List */ = {
+			isa = PBXGroup;
+			children = (
 				A2C58DB11EE2751600B8A948 /* SongListTVC.h */,
 				A2C58DB21EE2751600B8A948 /* SongListTVC.m */,
 				A2C58DBA1EE2794F00B8A948 /* SongListTCell.h */,
 				A2C58DBB1EE2794F00B8A948 /* SongListTCell.m */,
-				A2C58DBD1EE27ECC00B8A948 /* SongCategory.h */,
-				A2C58DBE1EE27ECC00B8A948 /* SongCategory.m */,
 				A2C58DC01EE27ED700B8A948 /* Song.h */,
 				A2C58DC11EE27ED700B8A948 /* Song.m */,
 			);
-			name = Song;
+			name = List;
+			sourceTree = "<group>";
+		};
+		A2C58DCD1EE2966F00B8A948 /* RecommendList */ = {
+			isa = PBXGroup;
+			children = (
+				A2C58DCE1EE2969000B8A948 /* RecommendListTVC.h */,
+				A2C58DCF1EE2969000B8A948 /* RecommendListTVC.m */,
+				A2C58DD11EE296BC00B8A948 /* RecommendListTCell.h */,
+				A2C58DD21EE296BC00B8A948 /* RecommendListTCell.m */,
+			);
+			name = RecommendList;
 			sourceTree = "<group>";
 		};
 		B5C9A833A8DA3C81E85C6924 /* Pods */ = {
@@ -458,6 +500,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C58DC71EE28CB000B8A948 /* Loading.xcassets in Resources */,
 				A2C58DB61EE2781100B8A948 /* song_category.json in Resources */,
 				A2C58D611EE2599100B8A948 /* LaunchScreen.storyboard in Resources */,
 				A2C58DA01EE269F900B8A948 /* Song.storyboard in Resources */,
@@ -633,13 +676,16 @@
 				A2C58DB31EE2751600B8A948 /* SongListTVC.m in Sources */,
 				A2C58DC21EE27ED700B8A948 /* Song.m in Sources */,
 				A2C58D911EE2659C00B8A948 /* MBProgressHUD.m in Sources */,
+				A2C58DD01EE2969000B8A948 /* RecommendListTVC.m in Sources */,
 				A2C58DA61EE26BCB00B8A948 /* APIClient.m in Sources */,
 				A2C58DAE1EE26CEE00B8A948 /* StrAlertFactory.m in Sources */,
+				A2C58DCA1EE2923700B8A948 /* UIImageView+APIClient.m in Sources */,
 				A2C58D9D1EE2690600B8A948 /* UIViewController+Shortcut.m in Sources */,
 				A2C58DB91EE2793700B8A948 /* SongCategoryCCell.m in Sources */,
 				A2C58DA31EE26B3C00B8A948 /* SongCategoryCVC.m in Sources */,
 				A2C58D871EE263BE00B8A948 /* KRLCollectionViewGridLayout.m in Sources */,
 				A2C58D9A1EE265DD00B8A948 /* UIImage+Original.m in Sources */,
+				A2C58DD31EE296BC00B8A948 /* RecommendListTCell.m in Sources */,
 				A2C58DAB1EE26C0D00B8A948 /* LSLoadingView.m in Sources */,
 				A2C58DC51EE28A3200B8A948 /* NSArray+Save.m in Sources */,
 				A2C58D501EE2599100B8A948 /* main.m in Sources */,

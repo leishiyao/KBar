@@ -10,6 +10,7 @@
 
 @interface Song : NSObject <NSCoding>
 
+@property (strong, nonatomic) NSString *albumUrl;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *author;
 

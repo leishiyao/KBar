@@ -10,12 +10,12 @@
 #ifdef DEBUG_SERVER
 
 static NSString * const APIServerBaseURLStr = @"http://mmmtapi.yueyishujia.com:8888/";
-//static NSString * const ImageServerBaseURLStr = @"http://mmmphoto.yueyishujia.com:8112/";
+static NSString * const ImageServerBaseURLStr = @"http://mmmphoto.yueyishujia.com:8112/";
 
 #else   // release
 
 static NSString * const APIServerBaseURLStr = @"http://mmmtapi.yueyishujia.com:8888/";
-//static NSString * const ImageServerBaseURLStr = @"http://mmmphoto.yueyishujia.com:8112/";
+static NSString * const ImageServerBaseURLStr = @"http://mmmphoto.yueyishujia.com:8112/";
 
 #endif
 
