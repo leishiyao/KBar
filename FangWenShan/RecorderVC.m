@@ -8,6 +8,7 @@
 
 #import "RecorderVC.h"
 #import "FangWenShan-Swift.h"
+#import <AVFoundation/AVFoundation.h>
 #import "Song.h"
 #import "JXTProgressLabel.h"
 
@@ -17,8 +18,10 @@
 
 @property (weak, nonatomic) IBOutlet UIView *vProgressLabelContainer;
 @property (nonatomic, strong) JXTProgressLabel * progressLabel2;
-@property (weak, nonatomic) IBOutlet UITextView *tvLyrics;
+@property (weak, nonatomic) IBOutlet UIProgressView *vProgress;
 
+@property (weak, nonatomic) IBOutlet UITextView *tvLyrics;
+@property (strong, nonatomic) AVAudioPlayer *player;
 @end
 
 @implementation RecorderVC
@@ -49,12 +52,20 @@
     
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-//    [_tvLyrics scrollRangeToVisible:NSMakeRange(0, 5)];
-//    http://blog.csdn.net/colorapp/article/details/44223807
+- (void) initAppearance {
+    //    [_tvLyrics scrollRangeToVisible:NSMakeRange(0, 5)];
+    //    http://blog.csdn.net/colorapp/article/details/44223807
     _tvLyrics.textContainerInset = UIEdgeInsetsZero;
     _tvLyrics.textContainer.lineFragmentPadding = 0;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self initAppearance];
+    
+//    NSString *songFilePath = [NSBundle.mainBundle pathForResource:@"viv" ofType:@"wav"];
+//    self.songFileURL = [[NSURL alloc] initFileURLWithPath:songFilePath];
+//    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:self.songFileURL error:nil];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -81,9 +92,25 @@
         if (_vEffect != nil) {
             return;
         }
+        
+        NSError *activationError = nil;
+        [[AVAudioSession sharedInstance] setActive:YES error:&activationError];
+        
+        [self.player prepareToPlay];
+        self.player.volume = 1.0;
+        [self.player play];
+        
+//        self.songProgressTimer = [NSTimer scheduledTimerWithTimeInterval:0.05
+//                                                                  target:self
+//                                                                selector:@selector(updateSongProgress)
+//                                                                userInfo:nil
+//                                                                 repeats:YES];
+        
         //            timeNum = 0.0
         //            recoderTimeLabel.text = "00:00:00"
         //            Recoder.recoder.startRecoder()
+        
+//        effect
         _vEffect = [[S_EffectView alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width / 5, [UIScreen mainScreen].bounds.size.height / 3, [UIScreen mainScreen].bounds.size.width / 2, 50.0)];
         [self.view addSubview:_vEffect];
         //            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updataTime), userInfo: nil, repeats: true)

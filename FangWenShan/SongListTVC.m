@@ -12,6 +12,7 @@
 #import "Song.h"
 #import "RecorderVC.h"
 #import "UIViewController+Shortcut.h"
+#import "RecommendListTVC.h"
 
 @interface SongListTVC ()
 
@@ -32,9 +33,8 @@
 
 - (void) loadData {
     NSMutableDictionary *params = [@{@"categoryName":_strSongCategory} mutableCopy];
-    [APIClient postToAPI:@"category" withParams:params success:^(NSDictionary *dicRet) {
-//        TODO
-        _arrSong = [Song parseFromResponse];
+    [APIClient postToAPI:@"1" withParams:params success:^(NSArray *arr) {
+        _arrSong = [Song parseFromResponse:arr category:_strSongCategory];
         [self.tableView reloadData];
     } fail:^(NSError *error) {
         ;
@@ -43,14 +43,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    _arrSong = [Song parseFromResponse];
-    [self.tableView reloadData];
     [self initAppearance];
-    
-    
-    
-//    [self loadData];
+    [self loadData];
 }
 
 #pragma mark - Table view data source
@@ -76,11 +70,18 @@
 
 #pragma mark Table View Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    RecorderVC *vc = [UIViewController getVC:[RecorderVC class] inSB:@"Song"];
+    
+    if (_mode == SongListFromCategory) {
+        RecommendListTVC *vc = [UIViewController getVC:[RecommendListTVC class] inSB:@"Song"];
+        vc.song = _arrSong[ indexPath.row ];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (_mode == SongListFromLocal) {
+    
+        RecorderVC *vc = [UIViewController getVC:[RecorderVC class] inSB:@"Song"];
 //  TODO
     
-    [self.navigationController pushViewController:vc animated:YES];
-    
+        [self.navigationController pushViewController:vc animated:YES];
+    }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

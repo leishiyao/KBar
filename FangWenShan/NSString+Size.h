@@ -11,4 +11,7 @@
 @interface NSString(Size)
 
 - (CGSize) calculateSizeWithFontSize:(CGFloat)fontSize MaxSize:(CGSize)maxSize;
+
+-(NSString *) utf8ToUnicode:(NSString *)string;
+- (NSString *)unicodeToUTF8;
 @end

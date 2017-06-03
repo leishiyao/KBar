@@ -9,13 +9,13 @@
 
 #ifdef DEBUG_SERVER
 
-static NSString * const APIServerBaseURLStr = @"http://mmmtapi.yueyishujia.com:8888/";
-static NSString * const ImageServerBaseURLStr = @"http://mmmphoto.yueyishujia.com:8112/";
+static NSString * const APIServerBaseURLStr = @"http://192.168.16.169:8887/ktv/";
+static NSString * const ImageServerBaseURLStr = @"http://192.168.16.169:8888/ktv/";
 
 #else   // release
 
-static NSString * const APIServerBaseURLStr = @"http://mmmtapi.yueyishujia.com:8888/";
-static NSString * const ImageServerBaseURLStr = @"http://mmmphoto.yueyishujia.com:8112/";
+static NSString * const APIServerBaseURLStr = @"http://wecomfort.f3322.org:8887/ktv/";
+static NSString * const ImageServerBaseURLStr = @"http://wecomfort.f3322.org:8888/ktv/";
 
 #endif
 
@@ -30,24 +30,24 @@ static NSString * const ImageServerBaseURLStr = @"http://mmmphoto.yueyishujia.co
                          waitingView:(BOOL)needsWaitingView
                            failAlert:(BOOL)needsFailAlert
                          leadToLogin:(BOOL)needsLeadToLogin
-                             success:(void (^)(NSDictionary *dicRet))bSuccess
+                             success:(void (^)(id ret))bSuccess
                                 fail:(void (^)(NSError *error))bFail;
 
 
 + (NSURLSessionDataTask *) postToAPI:(NSString *)api
                           withParams:(id)params
                            userAware:(BOOL)userAware
-                             success:(void (^)(NSDictionary *dicRet))bSuccess
+                             success:(void (^)(id ret))bSuccess
                                 fail:(void (^)(NSError *error))bFail;
 
 + (NSURLSessionDataTask *) postToAPI:(NSString *)api
                           withParams:(id)params
-                             success:(void (^)(NSDictionary *dicRet))bSuccess
+                             success:(void (^)(id ret))bSuccess
                                 fail:(void (^)(NSError *error))bFail;
 
 + (NSURLSessionDataTask *) postToAPI:(NSString *)api
                           withParams:(NSDictionary *)params
-                           withBlock:(void (^)(NSDictionary *dicRet, NSError *error))block;
+                           withBlock:(void (^)(id ret, NSError *error))block;
 
 
 @end

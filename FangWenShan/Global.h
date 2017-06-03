@@ -10,7 +10,7 @@
 #ifndef Global_h
 #define Global_h
 
-//#define DEBUG_SERVER
+#define DEBUG_SERVER
 
 
 #endif /* Global_h */

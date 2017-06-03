@@ -7,92 +7,81 @@
 //
 
 #import "RecommendListTVC.h"
+#import "RecommendListTCell.h"
+#import "Song.h"
+#import "APIClient.h"
+#import "RecorderVC.h"
+#import "UIViewController+Shortcut.h"
 
 @interface RecommendListTVC ()
+
+@property (strong, nonatomic) NSArray<Song *> *arrSong;
 
 @end
 
 @implementation RecommendListTVC
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void) initAppearance {
+//    if ( _mode == SongListFromCategory ) {
+//        self.navigationItem.title = _strSongCategory;
+//    } else if ( _mode == SongListFromLocal ) {
+//        self.navigationItem.title = @"本地歌单";
+//    }
+    self.tableView.tableFooterView = [[UIView alloc] init];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void) loadData {
+    NSMutableDictionary *params = [@{@"categoryName":_song.subCategory,
+                                     @"songName":_song.name,
+                                     @"author":_song.author} mutableCopy];
+    
+    [APIClient postToAPI:@"2" withParams:params success:^(NSArray *arr) {
+        _arrSong = [Song parseFromRecommended:arr originalSong:_song];
+        [self.tableView reloadData];
+    } fail:^(NSError *error) {
+        ;
+    }];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self initAppearance];
+    [self loadData];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    
+    return _arrSong.count;
 }
 
-/*
+#pragma mark Table View Data Source
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    RecommendListTCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RecommendListTCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    cell.song = _arrSong[ indexPath.row ];
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+#pragma mark Table View Delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+        RecorderVC *vc = [UIViewController getVC:[RecorderVC class] inSB:@"Song"];
+        //  TODO
+        
+        [self.navigationController pushViewController:vc animated:YES];
+    
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

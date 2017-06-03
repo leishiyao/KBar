@@ -7,18 +7,13 @@
 //
 
 #import "RecommendListTCell.h"
+#import "Song.h"
 
 @implementation RecommendListTCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)setSong:(Song *)song {
+    _song = song;
+    _lTitle.text = [_song strPieceList];
 }
 
 @end

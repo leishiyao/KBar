@@ -7,7 +7,7 @@
 //
 
 #import "SongCategory.h"
-
+#import "NSString+Size.h"
 @implementation SongCategory
 
 - (void)setNumSongs:(NSNumber *)numSongs {
@@ -32,7 +32,7 @@
         for (NSString *strSubCat in arrSubCat) {
             SongCategory *category = [[SongCategory alloc] init];
             category.imgName = [NSString stringWithFormat:@"song_cat_%d", 47 + (i++ % 35)];
-            category.name = strSubCat;
+            category.name = [strSubCat unicodeToUTF8];
             category.numSongs = @100;
             [arrSource addObject:category];
         }

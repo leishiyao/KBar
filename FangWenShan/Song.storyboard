@@ -169,33 +169,25 @@
                                                 <constraint firstAttribute="width" secondItem="jDZ-xQ-YR0" secondAttribute="height" multiplier="1:1" constant="1" id="bXH-n6-44m"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="梦醒时分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDS-Fa-eCs">
-                                            <rect key="frame" x="55" y="8" width="61.5" height="18"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="梦醒时分" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDS-Fa-eCs">
+                                            <rect key="frame" x="55" y="8" width="224" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陈淑桦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azk-e8-nA3">
-                                            <rect key="frame" x="55" y="30.5" width="40" height="16"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="azk-e8-nA3" secondAttribute="bottom" constant="8" id="2dD-z1-RHE"/>
                                         <constraint firstItem="jDZ-xQ-YR0" firstAttribute="leading" secondItem="nx5-8B-fJh" secondAttribute="leading" constant="8" id="WAJ-6k-aei"/>
+                                        <constraint firstAttribute="trailing" secondItem="IDS-Fa-eCs" secondAttribute="trailing" constant="8" id="e93-Fa-fQV"/>
                                         <constraint firstItem="jDZ-xQ-YR0" firstAttribute="top" secondItem="nx5-8B-fJh" secondAttribute="top" constant="8" id="fS5-1z-C9b"/>
                                         <constraint firstItem="IDS-Fa-eCs" firstAttribute="top" secondItem="nx5-8B-fJh" secondAttribute="top" constant="8" id="hsI-GC-gc3"/>
                                         <constraint firstAttribute="bottom" secondItem="jDZ-xQ-YR0" secondAttribute="bottom" constant="8" id="oQ0-tr-NGa"/>
-                                        <constraint firstItem="azk-e8-nA3" firstAttribute="leading" secondItem="IDS-Fa-eCs" secondAttribute="leading" id="q2F-fz-2Ds"/>
                                         <constraint firstItem="IDS-Fa-eCs" firstAttribute="leading" secondItem="jDZ-xQ-YR0" secondAttribute="trailing" constant="8" id="vfB-MB-IkQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="imgView" destination="jDZ-xQ-YR0" id="qk7-gc-NBL"/>
-                                    <outlet property="lAuthor" destination="azk-e8-nA3" id="aPD-k4-laj"/>
-                                    <outlet property="lName" destination="IDS-Fa-eCs" id="rcL-fG-tll"/>
+                                    <outlet property="lTitle" destination="IDS-Fa-eCs" id="ac5-U2-OoR"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -226,6 +218,9 @@
                             <imageView alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="leR-g4-Z44">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="noM-Hg-gSf">
+                                <rect key="frame" x="8" y="516" width="304" height="2"/>
+                            </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gF-mi-EP1">
                                 <rect key="frame" x="10" y="134" width="300" height="300"/>
                                 <constraints>
@@ -308,12 +303,15 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="s1i-Vr-Mzm" secondAttribute="trailing" id="0z5-9k-IUe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oiG-yS-usz" secondAttribute="trailing" id="48Q-Hq-oJw"/>
+                            <constraint firstItem="noM-Hg-gSf" firstAttribute="leading" secondItem="Pdo-Pm-nmU" secondAttribute="leading" constant="8" id="9aA-lh-3mu"/>
                             <constraint firstItem="zg8-rT-xfU" firstAttribute="leading" secondItem="Pdo-Pm-nmU" secondAttribute="leading" constant="8" id="Faz-Cl-9PI"/>
+                            <constraint firstItem="oiG-yS-usz" firstAttribute="top" secondItem="noM-Hg-gSf" secondAttribute="bottom" id="H7b-z3-zbB"/>
                             <constraint firstItem="YJZ-cs-oRe" firstAttribute="top" secondItem="NTJ-u9-ZPv" secondAttribute="bottom" constant="8" id="Hbo-Yb-1hu"/>
                             <constraint firstItem="RCl-UL-KlC" firstAttribute="leading" secondItem="Pdo-Pm-nmU" secondAttribute="leading" constant="8" id="JAM-UI-bR7"/>
                             <constraint firstItem="8gF-mi-EP1" firstAttribute="centerY" secondItem="Pdo-Pm-nmU" secondAttribute="centerY" id="K3c-vB-S0M"/>
                             <constraint firstAttribute="trailing" secondItem="zg8-rT-xfU" secondAttribute="trailing" constant="8" id="KWR-3y-Hum"/>
                             <constraint firstAttribute="trailing" secondItem="leR-g4-Z44" secondAttribute="trailing" id="KYf-tm-PZu"/>
+                            <constraint firstAttribute="trailing" secondItem="noM-Hg-gSf" secondAttribute="trailing" constant="8" id="Krk-MT-It6"/>
                             <constraint firstItem="csM-Wz-Q3i" firstAttribute="centerY" secondItem="YJZ-cs-oRe" secondAttribute="centerY" id="Sor-GP-qlf"/>
                             <constraint firstItem="csM-Wz-Q3i" firstAttribute="centerX" secondItem="leR-g4-Z44" secondAttribute="centerX" id="VKQ-Ie-Wlu"/>
                             <constraint firstItem="leR-g4-Z44" firstAttribute="top" secondItem="Pdo-Pm-nmU" secondAttribute="top" id="WjY-O2-AoJ"/>
@@ -330,6 +328,7 @@
                     </view>
                     <connections>
                         <outlet property="tvLyrics" destination="RCl-UL-KlC" id="lYp-Pe-wK3"/>
+                        <outlet property="vProgress" destination="noM-Hg-gSf" id="Rx2-XU-o1y"/>
                         <outlet property="vProgressLabelContainer" destination="zg8-rT-xfU" id="HpN-Xq-GPV"/>
                     </connections>
                 </viewController>

@@ -29,14 +29,14 @@
                          waitingView:(BOOL)needsWaitingView
                            failAlert:(BOOL)needsFailAlert
                          leadToLogin:(BOOL)needsLeadToLogin
-                             success:(void (^)(NSDictionary *dicRet))bSuccess
+                             success:(void (^)(id ret))bSuccess
                                 fail:(void (^)(NSError *error))bFail {
 #ifdef DEBUG_SERVER
     NSLog(@"POST TO %@", [[[APIClient sharedClient].baseURL absoluteString] stringByAppendingString:api]);
     NSLog(@"PARAMS %@", params);
 #endif
     NSURLSessionDataTask *task =
-    [[APIClient sharedClient] POST:api
+    [[APIClient sharedClient] GET:api
                         parameters:params
                           progress:nil
                            success:
@@ -61,8 +61,8 @@
              case 1:
              {
                  id postsFromResponse = [JSON valueForKeyPath:@"data"];
-                 if (postsFromResponse && [postsFromResponse isKindOfClass:[NSDictionary class]] == NO) {
-                     NSError *error = [NSError errorWithDomain:@"返回格式有误，不是字典值" code:0 userInfo:nil];
+                 if (postsFromResponse == nil) {
+                     NSError *error = [NSError errorWithDomain:@"服务器返回有误" code:0 userInfo:nil];
                      NSLog(@"%@", error);
                      if (bFail) {
                          bFail(error);
@@ -77,21 +77,21 @@
              }
             default:
              {
-                 NSString *reason = [JSON valueForKey: @"reason"];
-                 NSLog(@"%@", reason);
-                 NSError *error = [NSError errorWithDomain:reason code:[JSON[ @"code" ] integerValue] userInfo:nil];
-                 if (bFail) {
-                     bFail(error);
-                 }
-                 
-                 if (needsFailAlert) {
-                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
-                                                                         message:reason
-                                                                        delegate:nil
-                                                               cancelButtonTitle:@"好的"
-                                                               otherButtonTitles:nil];
-                     [alertView show];
-                 }
+//                 NSString *reason = [JSON valueForKey: @"reason"];
+//                 NSLog(@"%@", reason);
+//                 NSError *error = [NSError errorWithDomain:reason code:[JSON[ @"code" ] integerValue] userInfo:nil];
+//                 if (bFail) {
+//                     bFail(error);
+//                 }
+//                 
+//                 if (needsFailAlert) {
+//                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
+//                                                                         message:reason
+//                                                                        delegate:nil
+//                                                               cancelButtonTitle:@"好的"
+//                                                               otherButtonTitles:nil];
+//                     [alertView show];
+//                 }
                  break;
              }
          }
@@ -115,7 +115,7 @@
 + (NSURLSessionDataTask *) postToAPI:(NSString *)api
                           withParams:(NSDictionary *)params
                            userAware:(BOOL)userAware
-                             success:(void (^)(NSDictionary *dicRet))bSuccess
+                             success:(void (^)(id ret))bSuccess
                                 fail:(void (^)(NSError *error))bFail {
     return [self postToAPI:api
                 withParams:params
@@ -130,7 +130,7 @@
 
 + (NSURLSessionDataTask *) postToAPI:(NSString *)api
                           withParams:(NSDictionary *)params
-                             success:(void (^)(NSDictionary *dicRet))bSuccess
+                             success:(void (^)(id ret))bSuccess
                                 fail:(void (^)(NSError *error))bFail {
     return [self postToAPI:api
                 withParams:params
@@ -141,7 +141,7 @@
 
 + (NSURLSessionDataTask *) postToAPI:(NSString *)api
                           withParams:(NSDictionary *)params
-                           withBlock:(void (^)(NSDictionary *dicRet, NSError *error))block {
+                           withBlock:(void (^)(id ret, NSError *error))block {
     return [self postToAPI:api
                 withParams:params
                    success:^(id retObj) {

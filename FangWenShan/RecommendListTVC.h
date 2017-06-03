@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class Song;
 @interface RecommendListTVC : UITableViewController
+
+@property (strong, nonatomic) Song *song;
 
 @end
