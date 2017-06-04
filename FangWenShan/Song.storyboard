@@ -218,7 +218,7 @@
                             <imageView alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="leR-g4-Z44">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="noM-Hg-gSf">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="noM-Hg-gSf">
                                 <rect key="frame" x="8" y="516" width="304" height="2"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gF-mi-EP1">
@@ -249,9 +249,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csM-Wz-Q3i">
-                                <rect key="frame" x="85.5" y="22" width="148" height="42"/>
+                                <rect key="frame" x="137" y="22" width="45" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="148" id="7l6-xu-tr1"/>
                                     <constraint firstAttribute="height" constant="42" id="mYM-2G-ohH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -284,16 +283,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="108" id="OSc-oq-X7d"/>
                                 </constraints>
-                                <string key="text">1
-2
-3
-4
-5
-
-
-
-
-10</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
@@ -327,6 +316,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lTitle" destination="csM-Wz-Q3i" id="hnK-Kc-Iwi"/>
                         <outlet property="tvLyrics" destination="RCl-UL-KlC" id="lYp-Pe-wK3"/>
                         <outlet property="vProgress" destination="noM-Hg-gSf" id="Rx2-XU-o1y"/>
                         <outlet property="vProgressLabelContainer" destination="zg8-rT-xfU" id="HpN-Xq-GPV"/>

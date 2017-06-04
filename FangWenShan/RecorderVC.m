@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIView *vProgressLabelContainer;
 @property (nonatomic, strong) JXTProgressLabel * progressLabel2;
 @property (weak, nonatomic) IBOutlet UIProgressView *vProgress;
+@property (weak, nonatomic) IBOutlet UILabel *lTitle;
 
 @property (weak, nonatomic) IBOutlet UITextView *tvLyrics;
 @property (strong, nonatomic) AVAudioPlayer *player;
@@ -72,6 +73,7 @@
     //    http://blog.csdn.net/colorapp/article/details/44223807
     _tvLyrics.textContainerInset = UIEdgeInsetsZero;
     _tvLyrics.textContainer.lineFragmentPadding = 0;
+    _lTitle.text = _song.name;
 }
 
 - (void) loadData {
