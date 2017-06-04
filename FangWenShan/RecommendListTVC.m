@@ -74,10 +74,10 @@
 #pragma mark Table View Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-        RecorderVC *vc = [UIViewController getVC:[RecorderVC class] inSB:@"Song"];
+    RecorderVC *vc = [UIViewController getVC:[RecorderVC class] inSB:@"Song"];
         //  TODO
-        
-        [self.navigationController pushViewController:vc animated:YES];
+    vc.song = _arrSong[ indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
     
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

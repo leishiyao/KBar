@@ -10,6 +10,8 @@
 		6546C7C918127B7D620195C9 /* libPods-FangWenShanUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BFC883A2BF3486BFFB3EF6 /* libPods-FangWenShanUITests.a */; };
 		A2B2EA2D1EE2CC74006735C7 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B2EA2C1EE2CC74006735C7 /* NSString+Size.m */; };
 		A2B2EA2F1EE32A09006735C7 /* SongCat.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2B2EA2E1EE32A09006735C7 /* SongCat.xcassets */; };
+		A2B2EA321EE3905C006735C7 /* LyricLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B2EA311EE3905C006735C7 /* LyricLine.m */; };
+		A2B2EA381EE39E96006735C7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B2EA371EE39E96006735C7 /* AVFoundation.framework */; };
 		A2C58D501EE2599100B8A948 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D4F1EE2599100B8A948 /* main.m */; };
 		A2C58D531EE2599100B8A948 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C58D521EE2599100B8A948 /* AppDelegate.m */; };
 		A2C58D5C1EE2599100B8A948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C58D5A1EE2599100B8A948 /* Main.storyboard */; };
@@ -77,6 +79,9 @@
 		A2B2EA2B1EE2CC74006735C7 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
 		A2B2EA2C1EE2CC74006735C7 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		A2B2EA2E1EE32A09006735C7 /* SongCat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SongCat.xcassets; sourceTree = "<group>"; };
+		A2B2EA301EE3905C006735C7 /* LyricLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricLine.h; sourceTree = "<group>"; };
+		A2B2EA311EE3905C006735C7 /* LyricLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricLine.m; sourceTree = "<group>"; };
+		A2B2EA371EE39E96006735C7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A2C58D4B1EE2599100B8A948 /* FangWenShan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FangWenShan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C58D4F1EE2599100B8A948 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2C58D511EE2599100B8A948 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B2EA381EE39E96006735C7 /* AVFoundation.framework in Frameworks */,
 				C01DFE38C60F037BB2579742 /* libPods-FangWenShan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +182,7 @@
 		8114E8251A32CCAAE588FC2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2B2EA371EE39E96006735C7 /* AVFoundation.framework */,
 				0D8680DC53A06967AD779726 /* libPods-FangWenShan.a */,
 				196BD7204D1309136D640FA9 /* libPods-FangWenShanTests.a */,
 				96BFC883A2BF3486BFFB3EF6 /* libPods-FangWenShanUITests.a */,
@@ -352,6 +359,8 @@
 				A2C58DCC1EE2964800B8A948 /* List */,
 				A2C58DCB1EE2963900B8A948 /* Category */,
 				A2C58D9F1EE269F900B8A948 /* Song.storyboard */,
+				A2B2EA301EE3905C006735C7 /* LyricLine.h */,
+				A2B2EA311EE3905C006735C7 /* LyricLine.m */,
 			);
 			name = Song;
 			sourceTree = "<group>";
@@ -718,6 +727,7 @@
 				A2C58D991EE265DD00B8A948 /* NSObject+Description.m in Sources */,
 				A2C58D8C1EE2654100B8A948 /* MainVC.m in Sources */,
 				A2C58D981EE265DD00B8A948 /* MBProgressHUD+AFNetworking.m in Sources */,
+				A2B2EA321EE3905C006735C7 /* LyricLine.m in Sources */,
 				A2C58DB31EE2751600B8A948 /* SongListTVC.m in Sources */,
 				A2C58DD61EE2A04000B8A948 /* JXTProgressLabel.m in Sources */,
 				A2C58DF01EE2AAF600B8A948 /* RecorderVC.m in Sources */,

@@ -10,12 +10,12 @@
 #ifdef DEBUG_SERVER
 
 static NSString * const APIServerBaseURLStr = @"http://192.168.16.169:8887/ktv/";
-static NSString * const ImageServerBaseURLStr = @"http://192.168.16.169:8888/ktv/";
+static NSString * const ImageServerBaseURLStr = @"http://192.168.16.169:8888/";
 
 #else   // release
 
 static NSString * const APIServerBaseURLStr = @"http://wecomfort.f3322.org:8887/ktv/";
-static NSString * const ImageServerBaseURLStr = @"http://wecomfort.f3322.org:8888/ktv/";
+static NSString * const ImageServerBaseURLStr = @"http://wecomfort.f3322.org:8888/";
 
 #endif
 
